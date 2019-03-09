@@ -6,6 +6,7 @@
  */
 
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 // Demo 2
 class UiTest extends StatelessWidget {
@@ -17,6 +18,67 @@ class UiTest extends StatelessWidget {
       //App 样式
       theme: new ThemeData(primaryColor: Colors.orange),
       home: new MyUiDemo(),
+    );
+  }
+}
+
+class FavoriteWidget extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return new _FavoriteWidgetState();
+  }
+}
+
+class _FavoriteWidgetState extends State<FavoriteWidget> {
+  bool _isFavorited = true;
+  int _favoriteCount = 41;
+
+  void _toggleFavoite() {
+    setState(() {
+      if (_isFavorited) {
+        _favoriteCount -= 1;
+        _isFavorited = false;
+        Fluttertoast.showToast(
+            msg: "关注Lakers成功",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.BOTTOM,
+            textColor: Colors.orange,
+            backgroundColor: Colors.white12);
+      } else {
+        _favoriteCount += 1;
+        _isFavorited = true;
+        Fluttertoast.showToast(
+            msg: "取消关注Lakers",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.BOTTOM,
+            textColor: Colors.orange,
+            backgroundColor: Colors.white12);
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return new Row(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        new Container(
+          padding: new EdgeInsets.all(0.0),
+          child: new IconButton(
+              onPressed: _toggleFavoite,
+              icon: _isFavorited
+                  ? new Icon(Icons.star)
+                  : new Icon(Icons.star_border),
+              color: Colors.orange),
+        ),
+        new SizedBox(
+          width: 18.0,
+          child: new Container(
+            child: new Text('$_favoriteCount'),
+          ),
+        )
+      ],
     );
   }
 }
@@ -51,11 +113,13 @@ class MyUiDemo extends StatelessWidget {
               ],
             ),
           ),
-          new Icon(
-            Icons.star,
-            color: Colors.orange[500],
-          ),
-          new Text('41'),
+
+//          new Icon(
+//            Icons.star,
+//            color: Colors.orange[500],
+//          ),
+//          new Text('41'),
+          new FavoriteWidget(),
         ],
       ),
     );

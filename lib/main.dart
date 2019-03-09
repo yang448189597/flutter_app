@@ -10,10 +10,10 @@ void main() => runApp(
 //      new MyApp()
 
     // DEMO 2
-//    new UiTest()
+    new UiTest()
 
     // DEMO 3
-    new CardTest()
+//    new CardTest()
 );
 
 class MyApp extends StatelessWidget {
