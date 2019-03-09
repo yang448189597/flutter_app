@@ -110,7 +110,7 @@ class MyUiDemo extends StatelessWidget {
       title: 'Flutter demo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Top lakes'),
+          title: Text('Top Lakers'),
         ),
         body: new ListView(
           children: [

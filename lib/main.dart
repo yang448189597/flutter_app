@@ -3,13 +3,17 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter_app/uiTest.dart';
+import 'package:flutter_app/cardTest.dart';
 
 void main() => runApp(
     //  DEMO 1
 //      new MyApp()
 
     // DEMO 2
-    new UiTest()
+//    new UiTest()
+
+    // DEMO 3
+    new CardTest()
 );
 
 class MyApp extends StatelessWidget {
