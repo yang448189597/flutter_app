@@ -6,6 +6,7 @@
  */
 import 'package:flutter/material.dart';
 
+
 class CardTest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -54,14 +55,18 @@ class CardTest extends StatelessWidget {
     );
 
 
-    return MaterialApp(
-      title: 'Card demo',
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text('Card demo'),
-          ),
-          body: card
-      ),
-    );
+//    return MaterialApp(
+//      title: 'Card demo',
+//      home: Scaffold(
+//          appBar: AppBar(
+//            title: Text('Card demo'),
+//          ),
+//          body: card
+//      ),
+//    );
+
+      return Scaffold(
+        body: card,
+      );
   }
 }

@@ -164,32 +164,48 @@ class MyUiDemo extends StatelessWidget {
       padding: const EdgeInsets.all(32.0),
       child: new Text(
         '''
-洛杉矶湖人队（Los Angeles Lakers）是一个位于美国加利福尼亚州洛杉矶的篮球俱乐部，1947年成立于明尼阿波利斯，1960年搬迁到了洛杉矶。湖人这个名字来源于明尼阿波利斯的别称——千湖之地，指在美国东北五大湖工作或者居住的人。由于球衣颜色的关系，湖人队又被称为“紫金军团”。
+        洛杉矶湖人队（Los Angeles Lakers）是一个位于美国加利福尼亚州洛杉矶的篮球俱乐部，1947年成立于明尼阿波利斯，1960年搬迁到了洛杉矶。湖人这个名字来源于明尼阿波利斯的别称——千湖之地，指在美国东北五大湖工作或者居住的人。由于球衣颜色的关系，湖人队又被称为“紫金军团”。
         ''',
         softWrap: true,
       ),
     );
 
-    return MaterialApp(
-      title: 'Flutter demo',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Top Lakers'),
-        ),
-        body: new ListView(
-          children: [
-            new Image.asset(
-              'images/lakers.jpeg',
-              width: 600.0,
-              height: 240.0,
-              fit: BoxFit.cover,
-            ),
-            titleSection,
-            buttonSection,
-            textSection,
-          ],
-        ),
+    return Scaffold(
+      body: new ListView(
+        children: [
+          new Image.asset(
+            'images/lakers.jpeg',
+            width: 600.0,
+            height: 240.0,
+            fit: BoxFit.cover,
+          ),
+          titleSection,
+          buttonSection,
+          textSection,
+        ],
       ),
     );
+
+//    return MaterialApp(
+//      title: 'Flutter demo',
+//      home: Scaffold(
+////        appBar: AppBar(
+////          title: Text('Top Lakers'),
+////        ),
+//        body: new ListView(
+//          children: [
+//            new Image.asset(
+//              'images/lakers.jpeg',
+//              width: 600.0,
+//              height: 240.0,
+//              fit: BoxFit.cover,
+//            ),
+//            titleSection,
+//            buttonSection,
+//            textSection,
+//          ],
+//        ),
+//      ),
+//    );
   }
 }

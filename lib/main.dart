@@ -4,17 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter_app/uiTest.dart';
 import 'package:flutter_app/cardTest.dart';
+import 'package:flutter_app/buttomNavgtionBar.dart';
 
 void main() => runApp(
     //  DEMO 1
 //      new MyApp()
 
     // DEMO 2
-    new UiTest()
+//    new UiTest()
 
     // DEMO 3
 //    new CardTest()
-);
+
+    // DEMO 4
+    new ButtomBar());
 
 class MyApp extends StatelessWidget {
   @override
@@ -47,15 +50,15 @@ class RandomWordsState extends State<RandomWords> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Words app'),
-        // app bar add right icon
-        // onPressed 执行点击之后的方法
-        actions: <Widget>[
-          new IconButton(
-              icon: new Icon(Icons.format_line_spacing), onPressed: _pushSaved)
-        ],
-      ),
+//      appBar: new AppBar(
+//        title: new Text('Words app'),
+//        // app bar add right icon
+//        // onPressed 执行点击之后的方法
+//        actions: <Widget>[
+//          new IconButton(
+//              icon: new Icon(Icons.format_line_spacing), onPressed: _pushSaved)
+//        ],
+//      ),
       body: _buildSuggestions(),
     );
   }
@@ -124,9 +127,9 @@ class RandomWordsState extends State<RandomWords> {
           ).toList();
 
           return new Scaffold(
-            appBar: new AppBar(
-              title: new Text('Saved Words'),
-            ),
+//            appBar: new AppBar(
+//              title: new Text('Saved Words'),
+//            ),
             body: new ListView(children: divided),
           );
         },
