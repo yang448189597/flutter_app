@@ -5,6 +5,7 @@ import 'package:english_words/english_words.dart';
 import 'package:flutter_app/uiTest.dart';
 import 'package:flutter_app/cardTest.dart';
 import 'package:flutter_app/buttomNavgtionBar.dart';
+import 'package:flutter_app/buttomAppBar.dart';
 
 void main() => runApp(
     //  DEMO 1
@@ -17,7 +18,10 @@ void main() => runApp(
 //    new CardTest()
 
     // DEMO 4
-    new ButtomBar());
+//    new ButtomBar());
+
+    // DEMO 5
+    new CustomBottomAppBar());
 
 class MyApp extends StatelessWidget {
   @override
