@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter_app/uiTest.dart';
 import 'package:flutter_app/cardTest.dart';
-import 'package:flutter_app/buttomNavgtionBar.dart';
-import 'package:flutter_app/buttomAppBar.dart';
+import 'package:flutter_app/bottomNavgtionBar.dart';
+import 'package:flutter_app/bottomAppBar.dart';
 
 void main() => runApp(
     //  DEMO 1

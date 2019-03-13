@@ -5,7 +5,7 @@ import 'package:flutter_app/Pages/HomePage.dart';
 import 'package:flutter_app/Pages/PhonePage.dart';
 
 // Demo 2
-class ButtomBar extends StatelessWidget {
+class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -23,7 +23,7 @@ class BottomNavigationWidget extends StatefulWidget {
 }
 
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
-  final _BottomColor = Colors.blue;
+  final _bottomColor = Colors.blue;
   int _currentIndex = 0;
   List<Widget> listWidget = List();
 
@@ -47,38 +47,38 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color: _BottomColor,
+                  color: _bottomColor,
                 ),
                 title: Text(
                   'Home',
-                  style: TextStyle(color: _BottomColor),
+                  style: TextStyle(color: _bottomColor),
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.email,
-                  color: _BottomColor,
+                  color: _bottomColor,
                 ),
                 title: Text(
                   'Email',
-                  style: TextStyle(color: _BottomColor),
+                  style: TextStyle(color: _bottomColor),
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.phone_android,
-                  color: _BottomColor,
+                  color: _bottomColor,
                 ),
                 title: Text(
                   'Phone',
-                  style: TextStyle(color: _BottomColor),
+                  style: TextStyle(color: _bottomColor),
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.airplay,
-                  color: _BottomColor,
+                  color: _bottomColor,
                 ),
                 title: Text(
                   'AirPlay',
-                  style: TextStyle(color: _BottomColor),
+                  style: TextStyle(color: _bottomColor),
                 )),
           ],
 
