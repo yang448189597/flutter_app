@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/each_view_pages.dart';
+import 'package:flutter_app/Pages/each_view_pages.dart';
 
 class CustomBottomAppBar extends StatelessWidget {
   @override

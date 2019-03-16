@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/uiTest.dart';
+import 'package:flutter_app/UiPagesTest/uiTest.dart';
 /**
  * @Author: Luke
  * @Date: 2019/3/12 15:03
