@@ -4,13 +4,15 @@ import 'package:flutter_app/Pages/each_view_pages.dart';
 class CustomBottomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      //导航栏 名字
-      title: "ButtomBar app",
-      //App 样式
-      theme: new ThemeData(primaryColor: Colors.blue),
-      home: new CustomBottomAppBarWeight(),
-    );
+//    return new MaterialApp(
+//      //导航栏 名字
+//      title: "ButtomBar app",
+//      //App 样式
+//      theme: new ThemeData(primaryColor: Colors.blue),
+//      home: new CustomBottomAppBarWeight(),
+//    );
+
+  return CustomBottomAppBarWeight();
   }
 }
 

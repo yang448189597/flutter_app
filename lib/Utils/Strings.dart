@@ -7,5 +7,4 @@
 
 class Strings{
     static String appTittle = "Frist Flutter";
-
 }

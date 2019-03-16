@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:flutter_app/Animation/open_animation.dart';
 import 'package:flutter_app/RandomWordsDemo/random_words_demo.dart';
 import 'package:flutter_app/UiPagesTest/uiTest.dart';
 import 'package:flutter_app/UiPagesTest/cardTest.dart';
@@ -16,19 +17,25 @@ void main() => runApp(
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      //导航栏 名字
-      title: "RandomWords app",
-      //App 样式
-      theme: new ThemeData(primaryColor: Colors.lightBlue),
 
-//      home: new UiTest(),
+    return Container(
+      child: new MaterialApp(
+        //导航栏 名字
+        title: "Night Sky",
+        debugShowCheckedModeBanner: false,
+        //App 样式
+        theme: new ThemeData(
+            primaryColor: Colors.lightBlue,
+            primarySwatch: Colors.lightBlue
+        ),
+
 //      home: new UiTest(),
 //      home: new CardTest(),
 //      home: new BottomBar(),
-        home: new RandomWords(),
+//      home: new RandomWords(),
 //      home: new CustomBottomAppBar(),
-//      home: new KeepAliveDemo(),
+        home: new OpenAnimation(),
+      ),
     );
   }
 }
