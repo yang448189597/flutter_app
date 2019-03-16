@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/main.dart';
+import 'package:flutter_app/RandomWordsDemo/random_words_demo.dart';
 /**
  * @Author: Luke
  * @Date: 2019/3/12 15:03
