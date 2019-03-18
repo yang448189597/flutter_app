@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/Pages/icon_demo_page.dart';
+import 'package:flutter_app/GoogleTranslateDemo/icon_demo_page.dart';
+import 'package:flutter_app/GoogleTranslateDemo/record_tranlate.dart';
 /**
  * @Author: Luke
  * @Date: 2019/3/16 16:50
@@ -16,16 +17,18 @@ class TextFieldPageState extends State<TextFieldPage> {
   @override
   Widget build(BuildContext context) {
     return Card(
+      elevation: 5,
+      margin: EdgeInsets.all(0.0),
       child: Container(
         // 取消margin的距离
         margin: EdgeInsets.all(0.0),
-        height: 150.0,
+        height: 200.0,
         child: Column(
           //主轴 两边间隔
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             TextDemo(),
-            IconDemo()
+            IconDemo(),
           ],
         ),
       ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+
 /**
  * @Author: Luke
  * @Date: 2019/3/16 17:11
@@ -15,11 +17,26 @@ class IconDemoState extends State<IconDemo> {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: <Widget>[
+        Container(width: 10),
         ActionButton(
           title: '相机',
-          icon: Icons.add,
-        )
+          icon: Icons.camera_alt,
+        ),
+        ActionButton(
+          title: '语音',
+          icon: Icons.keyboard_voice,
+        ),
+        ActionButton(
+          title: '对话',
+          icon: Icons.message,
+        ),
+        ActionButton(
+          title: '文本输入',
+          icon: CupertinoIcons.pencil,
+        ),
+        Container(width: 10),
       ],
     );
   }

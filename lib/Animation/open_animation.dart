@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../Pages/index_page.dart';
+import 'package:flutter_app/GoogleTranslateDemo/index_page.dart';
 /**
  * @Author: Luke
  * @Date: 2019/3/16 15:13
