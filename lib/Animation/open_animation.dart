@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/GoogleTranslateDemo/index_page.dart';
+import 'package:flutter_app/Login/login_page.dart';
 /**
  * @Author: Luke
  * @Date: 2019/3/16 15:13
@@ -30,7 +31,7 @@ class OpenAnimationState extends State<OpenAnimation>
     // TODO: implement initState
     super.initState();
     _animationController =
-        AnimationController(duration: Duration(seconds: 3), vsync: this);
+        AnimationController(duration: Duration(seconds: 1), vsync: this);
 
     // float
     _animation = Tween(begin: 0.0, end: 1.0).animate(_animationController);
@@ -41,7 +42,8 @@ class OpenAnimationState extends State<OpenAnimation>
         //pushAndRemoveUntil predicate 是否删除路由
         Navigator.of(context).pushAndRemoveUntil(
             MaterialPageRoute(builder: (context) {
-          return IndexPage();
+//          return IndexPage();
+          return LoginPage();
         }),
             //predicate
             (route) => route == null);
