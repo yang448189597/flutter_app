@@ -32,6 +32,9 @@ dependencies:
 
   http: ^0.12.0
 
+  flustars: ^0.2.5
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

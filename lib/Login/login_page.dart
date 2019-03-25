@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flustars/flustars.dart';
 /**
  * @Author: Luke
  * @Date: 2019/3/18 11:43
@@ -95,11 +96,17 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
+  void getSceenHeight(){
+   double height = ScreenUtil.getScreenH(context);
+  }
+
   Widget _buttonLogin() {
     return ButtonBar(
       children: <Widget>[
         RaisedButton(
-          onPressed: () {},
+          onPressed: () {
+
+          },
           child: Text("登录"),
         ),
       ],
