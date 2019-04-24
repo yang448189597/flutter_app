@@ -18,7 +18,8 @@ class DrawerPage extends StatelessWidget {
           currentAccountPicture: null,
           decoration: BoxDecoration(
             image: DecorationImage(
-                fit: BoxFit.cover, image: AssetImage('images/lakers.jpeg')),
+                fit: BoxFit.cover, image: AssetImage('images/lakers.jpeg')
+            ),
           ),
         ),
         ListTile(

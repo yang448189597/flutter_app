@@ -173,11 +173,19 @@ class MyUiDemo extends StatelessWidget {
     return Scaffold(
       body: new ListView(
         children: [
-          new Image.asset(
-            'images/lakers.jpeg',
+          new Image.network(
+            'https://i.meizitu.net/thumbs/2019/03/177007_23d34_236.jpg',
             width: 600.0,
             height: 240.0,
             fit: BoxFit.cover,
+
+//              .addHeader("Accept-Language", "zh-CN,zh;q=0.9,zh-TW;q=0.8")
+////          .addHeader("Host", httpUrl != null ? httpUrl.host() : "img.99mm.net")
+////          .addHeader("Referer", "http://www.99mm.me/")
+////          .addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36")
+////          .build());
+            headers: {'Referer':'http://www.mzitu.com/','Accept-Language':'zh-CN,zh;q=0.9,zh-TW;q=0.8',
+              'Host':'i.meizitu.net','User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'},
           ),
           titleSection,
           buttonSection,

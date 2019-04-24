@@ -53,6 +53,7 @@ class _CustomBottomAppBar extends State<CustomBottomAppBarWeight> {
 
       bottomNavigationBar: BottomAppBar(
         color: Colors.lightBlue,
+        elevation: null,
         shape: CircularNotchedRectangle(),
         child: new Row(
           mainAxisSize: MainAxisSize.max,

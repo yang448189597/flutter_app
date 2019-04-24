@@ -35,10 +35,10 @@ class MyApp extends StatelessWidget {
 //      home: new CardTest(),
 //      home: new BottomBar(),
 //      home: new RandomWords(),
-//      home: new CustomBottomAppBar(),
+      home: new CustomBottomAppBar(),
 //      home: new OpenAnimation(),
 //      home: new WillDemo(title: 'title'),
-        home: new RefreshImageDemo(),
+//        home: new RefreshImageDemo(),
       ),
     );
   }

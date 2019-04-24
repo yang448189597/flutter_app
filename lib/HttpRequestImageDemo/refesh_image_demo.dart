@@ -89,11 +89,13 @@ class RefreshImageDemoState extends State<RefreshImageDemo> {
 
   void _requestImage() async {
     final response = await http.get(
-      'http://dog.ceo/api/breeds/image/random',
+      'http://192.168.50.146:8080/today',
     );
+
     if (response.statusCode == 200) {
       setState(() {
-        images.add(json.decode(response.body)['message']);
+
+        images.add(json.decode(response.body)['']);
       });
     } else {
       throw Exception('图片加载失败');
